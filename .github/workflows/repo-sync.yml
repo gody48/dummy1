@@ -14,8 +14,8 @@ jobs:
     - name: git-sync
       uses: wei/git-sync@v2
       with:
-        source_repo: https://github.com/gody48/dummy.git
+        source_repo: gody48/dummy
         source_branch: dell
-        destination_repo: https://github.com/gody48/dummy1.git
+        destination_repo: gody48/dummy1
         destination_branch: dell
 #        github_token: ${{ secrets.PAT }}
