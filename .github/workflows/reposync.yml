@@ -1,0 +1,24 @@
+# File: .github/workflows/repo-sync.yml
+name: branch sync
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+    - 1dell
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: 1dell
+    - name: git-sync
+      uses: wei/git-sync@v3
+      with:
+        source_repo: "gody48/dummy"
+        source_branch: "dell"
+#        destination_repo: "gody48/dummy1"
+        destination_branch: "1dell"
+        github_token: ${{ secrets.token }}
