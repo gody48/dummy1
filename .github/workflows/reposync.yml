@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: branch sync
+name: branch sync main
 
 on:
   workflow_dispatch: {}
