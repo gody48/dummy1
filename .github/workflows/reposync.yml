@@ -3,9 +3,9 @@ name: branch sync
 
 on:
   workflow_dispatch: {}
-  push:
-    branches:
-    - 1dell
+#  push:
+#    branches:
+#    - 1dell
 
 jobs:
   repo-sync:
